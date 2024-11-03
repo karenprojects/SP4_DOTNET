@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CrudSprint3")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8696117ae534e17ff90114843f8150a21c323f2c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e96eb176a55e6cc03faf8a2b3a8ea265f3c3b238")]
 [assembly: System.Reflection.AssemblyProductAttribute("CrudSprint3")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CrudSprint3")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

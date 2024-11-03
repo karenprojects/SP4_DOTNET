@@ -1,6 +1,4 @@
-﻿using CrudSprint2.Agendamentos;
-using CrudSprint2.Pacientes;
-using CrudSprint2.Unidades;
+﻿using CrudSprint2.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace CrudSprint2.Data;
