@@ -1,4 +1,4 @@
-﻿# EASY TECH
+# EASY TECH
 
 Este repositório contém uma API desenvolvida em ASP.NET Core como parte de um projeto para gerenciamento de **HEALTH TECH** do grupo **EASY TECH**.
 
@@ -12,14 +12,35 @@ Este repositório contém uma API desenvolvida em ASP.NET Core como parte de um 
 
 ## Arquitetura
 
-A API foi desenvolvida utilizando uma arquitetura **monolítica**, centralizando toda a lógica de negócios e comunicação com o banco de dados Oracle em um único projeto. Essa escolha simplifica a gestão e a implantação, considerando o porte médio do projeto. No entanto, já está planejada a futura migração para uma arquitetura de **microsserviços**.
-
+A API foi desenvolvida utilizando uma arquitetura **monolítica**, centralizando toda a lógica de negócios e comunicação com o banco de dados Oracle em um único projeto. Essa escolha simplifica a gestão e a implantação, considerando o porte médio do projeto.
 
 ## Tecnologias Utilizadas
 
 - **.NET 8.0**
 - **Entity Framework Core com Oracle**
 - **Swagger** para documentação da API
+- **xUnit** para testes unitários e de integração
+- **ML.NET** para funcionalidades de inteligência artificial
+
+## Funcionalidades de IA
+
+A API integra **ML.NET** para oferecer funcionalidades como:
+- **Previsão de agendamentos**
+
+## Integração com Serviço Externo
+
+A API realiza integrações com serviços externos, como:
+- **Serviços de autenticação** para segurança (especificar se houver implementação de OAuth ou JWT).
+
+## Testes
+
+O projeto implementa testes unitários e de integração utilizando **xUnit**, garantindo a qualidade e a confiabilidade da aplicação. Os testes incluem:
+- Testes de funcionalidade dos endpoints.
+- Testes de lógica de negócios.
+
+## Práticas de Clean Code
+
+A arquitetura do projeto foi construída aplicando práticas de **Clean Code**
 
 ## Endpoints
 
