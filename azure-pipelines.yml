@@ -1,19 +1,21 @@
-# Starter pipeline
-# Start with a minimal pipeline that you can customize to build and deploy your code.
-# Add steps that build, run tests, deploy, and more:
-# https://aka.ms/yaml
+stages:
+  - stage: Deploy
+    displayName: 'Deploy to Azure App Service'
+    jobs:
+      - deployment: DeployToAzure
+        environment: 'production'
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                # Baixando o artefato publicado pela build
+                - task: DownloadBuildArtifacts@0
+                  inputs:
+                    artifactName: 'drop'  # Nome do artefato publicado
+                    downloadPath: '$(System.ArtifactsDirectory)'
 
-trigger:
-- main
-
-pool:
-  vmImage: ubuntu-latest
-
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+                # Realizando o deploy no Azure App Service
+                - task: AzureWebApp@1
+                  inputs:
+                    appName: 'NomeDoAppService'  # Substitua pelo nome do seu App Service
+                    package: '$(System.ArtifactsDirectory)/drop/**/*.zip'  # Caminho para o arquivo .zip gerado na build
